@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ll"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ll"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.Light"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity
+            android:name=".SecondActivity"
+            android:label="Tracking"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name=".History"
+            android:exported="true"
+            android:label="@string/title_activity_history"
+            android:theme="@style/Theme.Material3.Light">
+        </activity>
+
+        <activity
+            android:name=".sub"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".info"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".product"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".buy"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>

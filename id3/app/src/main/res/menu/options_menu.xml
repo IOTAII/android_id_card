@@ -1,0 +1,12 @@
+<!-- options_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_24_hours"
+        android:title="Last 24 Hours" />
+    <item
+        android:id="@+id/option_6_hours"
+        android:title="Last 6 Hours" />
+    <item
+        android:id="@+id/option_6_months"
+        android:title="6months" />
+</menu>
